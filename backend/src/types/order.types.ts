@@ -1,7 +1,9 @@
-export enum EPayment {
-  card = "card",
-  online = "online",
-}
+const Status = {
+  card: "card",
+  online: "online",
+};
+
+export type EPayment = typeof Status[keyof typeof Status];
 
 export type TOrder = {
   payment: EPayment;

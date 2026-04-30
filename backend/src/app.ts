@@ -46,7 +46,7 @@ app.use(errorHandler);
 const main = async () => {
   await mongoose.connect(dbAddress as string);
   app.listen(PORT, () => {
-    console.log("listen 3000");
+    console.log(`listen ${PORT}`);
   });
 };
 
