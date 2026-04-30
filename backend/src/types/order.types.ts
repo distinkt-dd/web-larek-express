@@ -1,4 +1,4 @@
-enum EPayment {
+export enum EPayment {
   card = "card",
   online = "online",
 }
